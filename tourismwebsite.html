@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kjtourism</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="tourismwebsite.css">
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">Plan your trip go wherever you want to go and create a bag full of memories</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-background-container">
+            <h1 class="favourite-places-heading">
+                Favourite Places
+            </h1>
+            <div class="favourite-places-card-container d-flex flex-row" onclick="display('sectionTajMahal')">
+                <div>
+                    <h1 class="favourite-places-card-heading">
+                        Taj Mahal
+                    </h1>
+                    <p class="favourite-places-card-description">
+                        If there was just one symbol to represent all of India, it would be the Taj Mahal
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class=favourite-places-card-image />
+            </div>
+
+            <div class="favourite-places-card-container d-flex flex-row" onclick="display('sectionGoldenTemple')">
+                <div>
+                    <h1 class="favourite-places-card-heading">
+                        Golden Temple
+                    </h1>
+                    <p class="favourite-places-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-places-card-image" />
+            </div>
+
+            <div class="favourite-places-card-container d-flex flex-row" onclick="display('sectionMysorePalace')">
+                <div>
+                    <h1 class="favourite-places-card-heading">
+                        Mysore Palace
+                    </h1>
+                    <p class="favourite-places-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="favourite-places-card-image" />
+            </div>
+
+            <div class="favourite-places-card-container d-flex flex-row" onclick="display('sectionVaranasiTemple')">
+                <div>
+                    <h1 class="favourite-places-card-heading">
+                        Varanasi Temple
+                    </h1>
+                    <p class="favourite-places-card-description">
+                        Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="favourite-places-card-image" />
+            </div>
+        <button class="btn btn-dark" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+
+
+    <div id="sectionTajMahal">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+            <div id="tajMahalCarousel" class="carousel slide detailed-view-card-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#tajMahalCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#tajMahalCarousel" data-slide-to="1"></li>
+                    <li data-target="#tajMahalCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="detailed-view-image d-block w-100" alt="Taj">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="detailed-view-image d-block w-100" alt="Taj">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="detailed-view-image d-block w-100" alt="Taj">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#tajMahalCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#tajMahalCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div>
+                <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                <p class="detailed-view-card-description">The Taj Mahal is considered to be the greatest architectural achievement in the whole
+                range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic
+                combination of solids and voids, concave and convex and light shadow; such as arches and
+                domes further increases the aesthetic aspect. Not a piece of architecture, as other buildings
+                are, but the proud passions of an emperor’s love wrought in living stones.</p>
+            </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            <button class="btn btn-primary" onclick="display('sectionHome')">Home</button>
+        </div>
+    </div>
+    
+    <div id="sectionGoldenTemple">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="goldenTempleCorousel" class="carousel slide detailed-view-card-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#goldenTempleCorousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#goldenTempleCorousel" data-slide-to="1"></li>
+                        <li data-target="#goldenTempleCorousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/premium-photo/golden-temple_78361-4659.jpg" class="detailed-view-image d-block w-100" alt="gt">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/premium-photo/golden-temple-amritsar_163782-1576.jpg" class="detailed-view-image d-block w-100" alt="gt">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="detailed-view-image d-block w-100" alt="gt">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#goldenTempleCorousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#goldenTempleCorousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                <p class="detailed-view-card-description">The Golden Temple, also known as Harmandir Sahib, meaning "abode of
+                    God", is a gurdwara located in the city of Amritsar, Punjab, India.The
+                    gurdwara is built around a man-made pool (sarovar) that was completed
+                    by the fourth Sikh Guru, Guru Ram Das in 1577.</p>
+                    <ul class="detailed-view-card-description unordered-list">
+                        <li>Jallianwala Bagh</li>
+                        <li>Wagah Border</li>
+                        <li>Harika Wetland/li>
+                        <li>Bathinda Port</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            <button class="btn btn-primary" onclick="display('sectionHome')">Home</button>
+        </div>
+    </div>
+
+    <div id="sectionMysorePalace">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="mysoreFortCorousel" class="carousel slide detailed-view-card-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mysoreFort" data-slide-to="0" class="active"></li>
+                        <li data-target="#mysoreFort" data-slide-to="1"></li>
+                        <li data-target="#mysoreFort" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/premium-photo/mysore-palace_78361-1015.jpg" class="detailed-view-image d-block w-100" alt="mysorefort">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/mysore-palace-1.jpg" class="detailed-view-image d-block w-100" alt="mysorefort">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Mysore-palace_600-1200x800.jpg" class="detailed-view-image d-block w-100" alt="mysorefort">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mysoreFort" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mysoreFort" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+                <p class="detailed-view-card-description">Mysore Palace, also known as Amba Vilas Palace, 
+                    is a historical palace and a royal residence (house). It is located in Mysore, Karnataka,
+                    India. It used to be the official residence of the Wadiyar dynasty and the seat of the 
+                    Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills 
+                    eastward. Mysore is commonly described as the 'City of Palaces', and there are seven 
+                    palaces including this one. However, the Mysore Palace refers specifically to the one 
+                    within the new fort.</p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            <button class="btn btn-primary" onclick="display('sectionHome')">Home</button>
+        </div>
+    </div>
+
+    <div id="sectionVaranasiTemple">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="varanasiTempleCarousel" class="carousel slide detailed-view-card-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/Temples-In-Varanasi-cover_8th-Dec.jpg" class="detailed-view-image d-block w-100" alt="Taj">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvSo-XaWc75OPdfSwZnPXsG8Rn0yTvkWIjZlO-6vNkA&usqp=CAU&ec=48665698" class="detailed-view-image d-block w-100" alt="Taj">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVCj3tN9JH7J_MBAKhsfUnw12sEaAJaFovA4fMFpMbNA&usqp=CAU&ec=48665698" class="detailed-view-image d-block w-100" alt="Taj">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                <p class="detailed-view-card-description">Kashi Vishwanath Temple is one of the most famous temple in Varanasi, 
+                    also known as the Golden temple dedicated to the Lord Shiva. It was constructed in the year 1780 by the Maratha
+                    monarch, Maharani Ahilyabai Holkar of the Indore.</p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            <button class="btn btn-primary" onclick="display('sectionHome')">Home</button>
+        </div>
+    </div>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
